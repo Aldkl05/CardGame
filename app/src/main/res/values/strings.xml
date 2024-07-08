@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CardGamePIMS</string>
+    <string name="play"> play </string>
+    <string name="card_msg_black"> This is a Black Card </string>
+    <string name="card_msg_red"> This is a Red Card </string>
+    <string name="reset">Reset </string>
+
+</resources>

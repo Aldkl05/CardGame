@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/casinobg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:id="@+id/cardLayout"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="180dp">
+
+
+        <ImageView
+            android:id="@+id/blackCard"
+            android:contentDescription="@string/card_msg_black"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/black0"
+            />
+
+        <ImageView
+            android:id="@+id/redCard"
+            android:contentDescription="@string/card_msg_red"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/red0"
+            />
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <Button
+
+        android:layout_below="@+id/cardLayout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/playBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play"
+        android:backgroundTint="@color/amber"
+        />
+
+
+    <TextView
+        android:id="@+id/resultMsg"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="44sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <Button
+        android:id="@+id/restBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:layout_above="@+id/cardLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/red"
+        />
+
+</RelativeLayout>
